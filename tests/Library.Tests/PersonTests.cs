@@ -62,7 +62,7 @@ namespace Ucu.Poo.Persons.Tests
         {
             const string name = "One";
             const string anotherName = "Two";
-            const string hi = "Hola, Two, mi nombre es One\n";
+            const string hi = "Hola, Two, mi nombre es One\r\n";
 
             Person one = new Person(name, string.Empty);
             Person two = new Person(anotherName, string.Empty);
@@ -85,7 +85,7 @@ namespace Ucu.Poo.Persons.Tests
         {
             Person person = new Person("Nombre", "Apellido");
             int age = 10;
-            DateTime birthDate = DateTime.Today.AddYears(-age);
+            DateTime birthDate = DateTime.Today.AddYears(age);
 
             person.BirthDate = birthDate;
 
